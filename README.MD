@@ -6,7 +6,8 @@ By Wilfred Lopez
 
 .env.development file should be created and include the enviroment variables for Development.
 
-EXAMPLE:
+### EXAMPLE:
+
 DATABASE_NAME=<YOUR DATABASE NAME IN MONGO DB>
 JWT_SECRET=<YOUR JWT SECRET>
 FRONTEND_URL=http://localhost:3000
@@ -19,13 +20,17 @@ ormconfig.json file can be created but in this project im creating it manually i
 
 Install `yarn install`
 
-### Dev
+## Develope
 
-Dev `yarn run dev`
+- Backend `yarn run dev`
 
-### Build
+- Frontend: On a separte terminal run cd frontend `yarn start`
 
-Build `yarn run build`
+## Build
+
+`yarn run build`
+
+#### ENJOY!
 
 ```javascript
 import app from "app";

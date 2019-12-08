@@ -1,11 +1,17 @@
 {
-  "name": "vapemusic-server",
+  "name": "qqlreact-starter",
   "version": "1.0.0",
-  "description": "App To Download and Reproduce Music",
+  "description": "Starter Kit for QrapqhQL Backend and React Frontend",
   "main": "dist/index.js",
   "keywords": [
-    "Music"
+    "Typescript",
+    "Graphql",
+    "React",
+    "MERN"
   ],
+  "repository": {
+    "url": "https://github.com/wilfredlopez/GQL_-_React_BE_-_FE_Starter_Kit"
+  },
   "author": "Wilfred Lopez",
   "license": "MIT",
   "dependencies": {
