@@ -15,7 +15,6 @@
   "author": "Wilfred Lopez",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/storage": "^3.2.1",
     "apollo-server-express": "^2.9.3",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.2.3",

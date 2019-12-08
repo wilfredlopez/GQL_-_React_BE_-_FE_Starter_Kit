@@ -1,6 +1,6 @@
 # GQL And React BE And Frontend Starter Kit 1.0
 
-By Wilfred Lopez
+By Wilfred Lopez @2019
 
 ## Setup
 
@@ -22,6 +22,9 @@ ormconfig.json file can be created but in this project im creating it manually i
 
 Install `yarn install`
 
+Note:
+Express Session and Redis can be activated by removing the comments in the code. any other database can be use by changing the typeorm config.
+
 ## Develope
 
 - Backend `yarn run dev`
@@ -30,7 +33,8 @@ Install `yarn install`
 
 ## Build
 
-`yarn run build`
+- Backend `yarn run build`
+- Frontend via rootdir `yarn run build-client`
 
 #### ENJOY!
 
