@@ -4,9 +4,10 @@ import cookieParser from "cookie-parser";
 import cors, { CorsOptions } from "cors";
 import express, { Response } from "express";
 import { buildSchema } from "type-graphql";
-// import { Request, Response } from "express";
 import { createConnection } from "typeorm";
 // import session from "express-session";
+//yarn add express-session
+//yarn add -D @types/express-session
 import { userLoader } from "./dataloaders/dataloaders";
 import { DATABASE_NAME, MONGO_URL } from "./env";
 import { MyContext } from "./interfaces/myContext";
@@ -19,7 +20,7 @@ import UserResolver from "./resolvers/user/userResolver";
 // import { ACCESS_TOKEN } from "./constants";
 // import { redis } from "./redis";
 // import connectRedis from "connect-redis";
-
+//yarn add connect-redis
 // const RedisStore = connectRedis(session);
 
 const allowedOrigins = ["http://localhost:3000", "http://localhost:5500"]; //Add other allowed origins here
@@ -29,7 +30,6 @@ const app = async () => {
 
   const corsOptions: CorsOptions = {
     origin: allowedOrigins,
-
     credentials: true // <-- REQUIRED backend setting
   };
 
@@ -80,7 +80,7 @@ const app = async () => {
     context: ({ req, res }: MyContext) => ({
       req,
       res,
-      session: req.session,
+      // session: req.session,
       userLoader: userLoader()
     }),
     introspection: true,

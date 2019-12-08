@@ -14,5 +14,5 @@ export interface MyContext {
   req: MyRequest;
   res: Response;
   userLoader: ReturnType<typeof userLoader>;
-  // session: Session;
+  // session: Session; //from express-session
 }
